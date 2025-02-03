@@ -17,7 +17,7 @@ function App() {
       if(token){
         axios.defaults.headers.common['Authorization'] = token;
       }else{
-        navigate('./Login');
+        navigate('/Login');
       }
     },[])
 
