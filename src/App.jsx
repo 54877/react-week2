@@ -16,8 +16,6 @@ function App() {
       //避免未登入時取得token
       if(token){
         axios.defaults.headers.common['Authorization'] = token;
-      }else{
-        navigate('/Login');
       }
     },[])
 
